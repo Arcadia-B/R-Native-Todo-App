@@ -1,17 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, Button, TextInput } from 'react-native'; 
-import styles from "./styles"
-import Input from './Components/Input/Input';
+import { Text, View, Button, TextInput, SafeAreaView } from 'react-native'; 
+import TodoScreen from './Components/Input/TodoScreen';
 
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <Input/>
+    <SafeAreaView>
+    <View>
+      <TodoScreen/>
   
       <StatusBar style="auto" />
     </View>
+    </SafeAreaView>
   );
 }
 
